@@ -21,7 +21,7 @@ int main()
 
 void    mousepress(double xmouse, double ymouse, t_morpion *t_morpion)
 {
-//    printf("x = %f | y = %f\n", xmouse, ymouse);
+    /*---MOUSE EN BAS A DROITE---*/
     if(((xmouse >= 100 && xmouse <= 195) && (ymouse >= 325 && ymouse <= 420)) && mlx_is_key_down(t_morpion->mlx, MLX_KEY_KP_ENTER))
     {
         if (t_morpion->player_turn == 1 && t_morpion->verif.kp_1 == 0)
@@ -39,7 +39,7 @@ void    mousepress(double xmouse, double ymouse, t_morpion *t_morpion)
             t_morpion->player_turn = 1;
         }
     }
-
+    /*---MOUSE EN BAS AU MILIEU---*/
     else if(((xmouse >= 200 && xmouse <= 295) && (ymouse >= 325 && ymouse <= 420)) && mlx_is_key_down(t_morpion->mlx, MLX_KEY_KP_ENTER))
     {
         if (t_morpion->player_turn == 1 && t_morpion->verif.kp_2 == 0)
@@ -57,7 +57,7 @@ void    mousepress(double xmouse, double ymouse, t_morpion *t_morpion)
             t_morpion->player_turn = 1;
         }
     }
-
+    /*---MOUSE EN BAS A GAUCHE---*/
     else if(((xmouse >= 300 && xmouse <= 395) && (ymouse >= 325 && ymouse <= 420)) && mlx_is_key_down(t_morpion->mlx, MLX_KEY_KP_ENTER))
     {
         if (t_morpion->player_turn == 1 && t_morpion->verif.kp_3 == 0)
@@ -75,7 +75,7 @@ void    mousepress(double xmouse, double ymouse, t_morpion *t_morpion)
             t_morpion->player_turn = 1;
         }
     }
-
+    /*---MOUSE AU MILIEU A GAUCHE---*/
     else if(((xmouse >= 100 && xmouse <= 195) && (ymouse >= 220 && ymouse <= 320)) && mlx_is_key_down(t_morpion->mlx, MLX_KEY_KP_ENTER))
     {
         if (t_morpion->player_turn == 1 && t_morpion->verif.kp_4 == 0)
@@ -93,7 +93,7 @@ void    mousepress(double xmouse, double ymouse, t_morpion *t_morpion)
             t_morpion->player_turn = 1;
         }
     }
-
+    /*---MOUSE AU MILIEU AU MILIEU---*/
     else if(((xmouse >= 200 && xmouse <= 295) && (ymouse >= 220 && ymouse <= 320)) && mlx_is_key_down(t_morpion->mlx, MLX_KEY_KP_ENTER))
     {
         if (t_morpion->player_turn == 1 && t_morpion->verif.kp_5 == 0)
@@ -111,7 +111,7 @@ void    mousepress(double xmouse, double ymouse, t_morpion *t_morpion)
             t_morpion->player_turn = 1;
         }
     }
-
+    /*---MOUSE AU MILIEU AU DROITE---*/
     else if(((xmouse >= 300 && xmouse <= 395) && (ymouse >= 220 && ymouse <= 320)) && mlx_is_key_down(t_morpion->mlx, MLX_KEY_KP_ENTER))
     {
         if (t_morpion->player_turn == 1 && t_morpion->verif.kp_6 == 0)
@@ -129,7 +129,7 @@ void    mousepress(double xmouse, double ymouse, t_morpion *t_morpion)
             t_morpion->player_turn = 1;
         }
     }
-
+    /*---MOUSE EN HAUT A GAUCHE---*/
     else if(((xmouse >= 100 && xmouse <= 195) && (ymouse >= 120 && ymouse <= 220)) && mlx_is_key_down(t_morpion->mlx, MLX_KEY_KP_ENTER))
     {
         if (t_morpion->player_turn == 1 && t_morpion->verif.kp_7 == 0)
@@ -147,7 +147,7 @@ void    mousepress(double xmouse, double ymouse, t_morpion *t_morpion)
             t_morpion->player_turn = 1;
         }
     }
-
+    /*---MOUSE EN HAUT AU MILIEU---*/
     else if(((xmouse >= 200 && xmouse <= 295) && (ymouse >= 120 && ymouse <= 220)) && mlx_is_key_down(t_morpion->mlx, MLX_KEY_KP_ENTER))
     {
         if (t_morpion->player_turn == 1 && t_morpion->verif.kp_8 == 0)
@@ -165,7 +165,7 @@ void    mousepress(double xmouse, double ymouse, t_morpion *t_morpion)
             t_morpion->player_turn = 1;
         }
     }
-
+    /*---MOUSE EN HAUT A DROITE---*/
     else if(((xmouse >= 300 && xmouse <= 395) && (ymouse >= 120 && ymouse <= 220)) && mlx_is_key_down(t_morpion->mlx, MLX_KEY_KP_ENTER))
     {
         if (t_morpion->player_turn == 1 && t_morpion->verif.kp_9 == 0)
@@ -184,14 +184,6 @@ void    mousepress(double xmouse, double ymouse, t_morpion *t_morpion)
         }
     }
 }
-
-
-
-
-
-
-
-
 
 void    key_press(mlx_key_data_t keydata ,t_morpion *t_morpion)
 {
