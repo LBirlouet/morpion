@@ -344,8 +344,6 @@ void    key_press(mlx_key_data_t keydata ,t_morpion *t_morpion)
     }
 }
 
-
-
 void display_fond(t_morpion *t_morpion)
 {
     mlx_image_to_window(t_morpion->mlx, t_morpion->img.fond_morpion, 0, 0);
