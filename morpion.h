@@ -27,11 +27,22 @@ mlx_texture_t	*texture_round_morpion;
 mlx_image_t		*img_round_morpion;
 }				t_img;
 
-
+typedef struct s_verif{
+int kp_1 ;
+int kp_2 ;
+int kp_3 ;
+int kp_4 ;
+int kp_5 ;
+int kp_6 ;
+int kp_7 ;
+int kp_8 ;
+int kp_9 ;
+}				t_verif;
 
 typedef struct s_morpion{
 mlx_t   *mlx;
 t_img   img;
+t_verif verif;
 int     player_turn;
 }				t_morpion;
 

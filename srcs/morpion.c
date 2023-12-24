@@ -9,7 +9,6 @@ int main()
 		return 0;
 	}
     init(&t_morpion);
-    printf("test\n");
     display_fond(&t_morpion);
     mlx_key_hook(t_morpion.mlx, (mlx_keyfunc)key_press, &t_morpion);
 
@@ -24,136 +23,154 @@ void    key_press(mlx_key_data_t keydata ,t_morpion *t_morpion)
         mlx_close_window(t_morpion->mlx);
     else if(keydata.key == MLX_KEY_KP_1 && keydata.action == MLX_RELEASE)
     {
-        if (t_morpion->player_turn == 1)
+        if (t_morpion->player_turn == 1 && t_morpion->verif.kp_1 == 0)
         {
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_cross_morpion, 120, 340);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_2_turn_morpion, 0, 0);
+            t_morpion->verif.kp_1 = 1;
             t_morpion->player_turn = 2;
         }
-        else if (t_morpion->player_turn == 2)
+        else if (t_morpion->player_turn == 2 && t_morpion->verif.kp_1 == 0)
         {
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_round_morpion, 120, 340);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_1_turn_morpion, 0, 0);
+            t_morpion->verif.kp_1 = 1;
             t_morpion->player_turn = 1;
         }
     }
     else if(keydata.key == MLX_KEY_KP_2 && keydata.action == MLX_RELEASE)
     {
-        if (t_morpion->player_turn == 1)
+        if (t_morpion->player_turn == 1 && t_morpion->verif.kp_2 == 0)
         {
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_cross_morpion, 220, 340);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_2_turn_morpion, 0, 0);
+            t_morpion->verif.kp_2 = 1;
             t_morpion->player_turn = 2;
         }
-        else if (t_morpion->player_turn == 2)
+        else if (t_morpion->player_turn == 2 && t_morpion->verif.kp_2 == 0)
         {
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_round_morpion, 220, 340);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_1_turn_morpion, 0, 0);
+            t_morpion->verif.kp_2 = 1;
             t_morpion->player_turn = 1;
         }
     }
     else if(keydata.key == MLX_KEY_KP_3 && keydata.action == MLX_RELEASE)
     {
-        if (t_morpion->player_turn == 1)
+        if (t_morpion->player_turn == 1 && t_morpion->verif.kp_3 == 0)
         {
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_cross_morpion, 320, 340);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_2_turn_morpion, 0, 0);
+            t_morpion->verif.kp_3 = 1;
             t_morpion->player_turn = 2;
         }
-        else if (t_morpion->player_turn == 2)
+        else if (t_morpion->player_turn == 2 && t_morpion->verif.kp_3 == 0)
         {
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_round_morpion, 320, 340);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_1_turn_morpion, 0, 0);
+            t_morpion->verif.kp_3 = 1;
             t_morpion->player_turn = 1;
         }
     }
     else if(keydata.key == MLX_KEY_KP_4 && keydata.action == MLX_RELEASE)
     {
-        if (t_morpion->player_turn == 1)
+        if (t_morpion->player_turn == 1 && t_morpion->verif.kp_4 == 0)
         {
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_cross_morpion, 120, 240);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_2_turn_morpion, 0, 0);
+            t_morpion->verif.kp_4 = 1;
             t_morpion->player_turn = 2;
         }
-        else if (t_morpion->player_turn == 2)
+        else if (t_morpion->player_turn == 2 && t_morpion->verif.kp_4 == 0)
         {
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_round_morpion, 120, 240);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_1_turn_morpion, 0, 0);
+            t_morpion->verif.kp_4 = 1;  
             t_morpion->player_turn = 1;
         }
     }
     else if(keydata.key == MLX_KEY_KP_5 && keydata.action == MLX_RELEASE)
     {
-        if (t_morpion->player_turn == 1)
+        if (t_morpion->player_turn == 1 && t_morpion->verif.kp_5 == 0)
         {
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_cross_morpion, 220, 240);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_2_turn_morpion, 0, 0);
+            t_morpion->verif.kp_5 = 1;    
             t_morpion->player_turn = 2;
         }
-        else if (t_morpion->player_turn == 2)
+        else if (t_morpion->player_turn == 2 && t_morpion->verif.kp_5 == 0)
         {
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_round_morpion, 220, 240);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_1_turn_morpion, 0, 0);
+            t_morpion->verif.kp_5 = 1; 
             t_morpion->player_turn = 1;
         }
     }
     else if(keydata.key == MLX_KEY_KP_6 && keydata.action == MLX_RELEASE)
     {
-        if (t_morpion->player_turn == 1)
+        if (t_morpion->player_turn == 1 && t_morpion->verif.kp_6 == 0)
         {
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_cross_morpion, 320, 240);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_2_turn_morpion, 0, 0);
+            t_morpion->verif.kp_6 = 1; 
             t_morpion->player_turn = 2;
         }
-        else if (t_morpion->player_turn == 2)
+        else if (t_morpion->player_turn == 2 && t_morpion->verif.kp_6 == 0)
         {
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_round_morpion, 320, 240);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_1_turn_morpion, 0, 0);
+            t_morpion->verif.kp_6 = 1;
             t_morpion->player_turn = 1;
         }
     }
     else if(keydata.key == MLX_KEY_KP_7 && keydata.action == MLX_RELEASE)
     {
-        if (t_morpion->player_turn == 1)
+        if (t_morpion->player_turn == 1 && t_morpion->verif.kp_7 == 0)
         {
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_cross_morpion, 120, 140);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_2_turn_morpion, 0, 0);
+            t_morpion->verif.kp_7 = 1;
             t_morpion->player_turn = 2;
         }
-        else if (t_morpion->player_turn == 2)
+        else if (t_morpion->player_turn == 2 && t_morpion->verif.kp_7 == 0)
         {
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_round_morpion, 120, 140);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_1_turn_morpion, 0, 0);
+            t_morpion->verif.kp_7 = 1;        
             t_morpion->player_turn = 1;
         }
     }
     else if(keydata.key == MLX_KEY_KP_8 && keydata.action == MLX_RELEASE)
     {
-        if (t_morpion->player_turn == 1)
+        if (t_morpion->player_turn == 1 && t_morpion->verif.kp_8 == 0)
         {
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_cross_morpion, 220, 140);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_2_turn_morpion, 0, 0);
+            t_morpion->verif.kp_8 = 1;        
             t_morpion->player_turn = 2;
         }
-        else if (t_morpion->player_turn == 2)
+        else if (t_morpion->player_turn == 2 && t_morpion->verif.kp_8 == 0)
         {
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_round_morpion, 220, 140);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_1_turn_morpion, 0, 0);
+            t_morpion->verif.kp_8 = 1;        
             t_morpion->player_turn = 1;
         }
     }
     else if(keydata.key == MLX_KEY_KP_9 && keydata.action == MLX_RELEASE)
     {
-        if (t_morpion->player_turn == 1)
+        if (t_morpion->player_turn == 1 && t_morpion->verif.kp_9 == 0)
         {
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_cross_morpion, 320, 140);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_2_turn_morpion, 0, 0);
+            t_morpion->verif.kp_9 = 1;       
             t_morpion->player_turn = 2;
         }
-        else if (t_morpion->player_turn == 2)
+        else if (t_morpion->player_turn == 2 && t_morpion->verif.kp_9 == 0)
         {
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_round_morpion, 320, 140);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_1_turn_morpion, 0, 0);
+            t_morpion->verif.kp_9 = 1;
             t_morpion->player_turn = 1;
         }
     }
