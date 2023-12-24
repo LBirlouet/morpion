@@ -44,14 +44,14 @@ void    mousepress(double xmouse, double ymouse, t_morpion *t_morpion)
     {
         if (t_morpion->player_turn == 1 && t_morpion->verif.kp_2 == 0)
         {
-            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_cross_morpion, 220, 340);
+            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_cross_morpion, 225, 340);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_2_turn_morpion, 0, 0);
             t_morpion->verif.kp_2 = 1;
             t_morpion->player_turn = 2;
         }
         else if (t_morpion->player_turn == 2 && t_morpion->verif.kp_2 == 0)
         {
-            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_round_morpion, 220, 340);
+            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_round_morpion, 225, 340);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_1_turn_morpion, 0, 0);
             t_morpion->verif.kp_2 = 1;
             t_morpion->player_turn = 1;
@@ -98,14 +98,14 @@ void    mousepress(double xmouse, double ymouse, t_morpion *t_morpion)
     {
         if (t_morpion->player_turn == 1 && t_morpion->verif.kp_5 == 0)
         {
-            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_cross_morpion, 220, 240);
+            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_cross_morpion, 225, 240);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_2_turn_morpion, 0, 0);
             t_morpion->verif.kp_5 = 1;    
             t_morpion->player_turn = 2;
         }
         else if (t_morpion->player_turn == 2 && t_morpion->verif.kp_5 == 0)
         {
-            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_round_morpion, 220, 240);
+            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_round_morpion, 225, 240);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_1_turn_morpion, 0, 0);
             t_morpion->verif.kp_5 = 1; 
             t_morpion->player_turn = 1;
@@ -152,14 +152,14 @@ void    mousepress(double xmouse, double ymouse, t_morpion *t_morpion)
     {
         if (t_morpion->player_turn == 1 && t_morpion->verif.kp_8 == 0)
         {
-            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_cross_morpion, 220, 140);
+            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_cross_morpion, 225, 140);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_2_turn_morpion, 0, 0);
             t_morpion->verif.kp_8 = 1;        
             t_morpion->player_turn = 2;
         }
         else if (t_morpion->player_turn == 2 && t_morpion->verif.kp_8 == 0)
         {
-            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_round_morpion, 220, 140);
+            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_round_morpion, 225, 140);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_1_turn_morpion, 0, 0);
             t_morpion->verif.kp_8 = 1;        
             t_morpion->player_turn = 1;
@@ -210,14 +210,14 @@ void    key_press(mlx_key_data_t keydata ,t_morpion *t_morpion)
     {
         if (t_morpion->player_turn == 1 && t_morpion->verif.kp_2 == 0)
         {
-            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_cross_morpion, 220, 340);
+            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_cross_morpion, 225, 340);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_2_turn_morpion, 0, 0);
             t_morpion->verif.kp_2 = 1;
             t_morpion->player_turn = 2;
         }
         else if (t_morpion->player_turn == 2 && t_morpion->verif.kp_2 == 0)
         {
-            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_round_morpion, 220, 340);
+            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_round_morpion, 225, 340);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_1_turn_morpion, 0, 0);
             t_morpion->verif.kp_2 = 1;
             t_morpion->player_turn = 1;
@@ -261,14 +261,14 @@ void    key_press(mlx_key_data_t keydata ,t_morpion *t_morpion)
     {
         if (t_morpion->player_turn == 1 && t_morpion->verif.kp_5 == 0)
         {
-            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_cross_morpion, 220, 240);
+            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_cross_morpion, 225, 240);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_2_turn_morpion, 0, 0);
             t_morpion->verif.kp_5 = 1;    
             t_morpion->player_turn = 2;
         }
         else if (t_morpion->player_turn == 2 && t_morpion->verif.kp_5 == 0)
         {
-            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_round_morpion, 220, 240);
+            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_round_morpion, 225, 240);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_1_turn_morpion, 0, 0);
             t_morpion->verif.kp_5 = 1; 
             t_morpion->player_turn = 1;
@@ -312,14 +312,14 @@ void    key_press(mlx_key_data_t keydata ,t_morpion *t_morpion)
     {
         if (t_morpion->player_turn == 1 && t_morpion->verif.kp_8 == 0)
         {
-            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_cross_morpion, 220, 140);
+            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_cross_morpion, 225, 140);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_2_turn_morpion, 0, 0);
             t_morpion->verif.kp_8 = 1;        
             t_morpion->player_turn = 2;
         }
         else if (t_morpion->player_turn == 2 && t_morpion->verif.kp_8 == 0)
         {
-            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_round_morpion, 220, 140);
+            mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_round_morpion, 225, 140);
             mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_player_1_turn_morpion, 0, 0);
             t_morpion->verif.kp_8 = 1;        
             t_morpion->player_turn = 1;
