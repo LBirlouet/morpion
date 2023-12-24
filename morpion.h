@@ -49,6 +49,9 @@ int     player_turn;
 void    init(t_morpion *t_morpion);
 void display_fond(t_morpion *t_morpion);
 void    key_press(mlx_key_data_t keydata ,t_morpion *t_morpion);
+
+void    mousepress(double xmouse, double ymouse, t_morpion *t_morpion);
+
 int main();
 
 #endif
