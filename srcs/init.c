@@ -1,30 +1,28 @@
 #include "../morpion.h"
 
-void    init(t_morpion *t_morpion)
+void	init(t_morpion *t_morpion)
 {
-    t_morpion->player_turn = 1;
-    t_morpion->all_filled = 0;
-    t_morpion->win = 0;
-
-    t_morpion->verif.kp_1 = 0;
-    t_morpion->verif.kp_2 = 0;
-    t_morpion->verif.kp_3 = 0;
-    t_morpion->verif.kp_4 = 0;
-    t_morpion->verif.kp_5 = 0;
-    t_morpion->verif.kp_6 = 0;
-    t_morpion->verif.kp_7 = 0;
-    t_morpion->verif.kp_8= 0;
-    t_morpion->verif.kp_9 = 0;
-
-    int i = 0;
-    t_morpion->map = malloc(sizeof(char *) * 3);
-    while (i < 3)
-    {
-        t_morpion->map[i] = malloc(sizeof(char) * 3);
-        t_morpion->map[i] = strcpy(t_morpion->map[i], "000");
-        t_morpion->map[i][3] = '\0';
-        i++;
-    }
+	t_morpion->player_turn = 1;
+	t_morpion->all_filled = 0;
+	t_morpion->win = 0;
+	t_morpion->verif.kp_1 = 0;
+	t_morpion->verif.kp_2 = 0;
+	t_morpion->verif.kp_3 = 0;
+	t_morpion->verif.kp_4 = 0;
+	t_morpion->verif.kp_5 = 0;
+	t_morpion->verif.kp_6 = 0;
+	t_morpion->verif.kp_7 = 0;
+	t_morpion->verif.kp_8= 0;
+	t_morpion->verif.kp_9 = 0;
+	int i = 0;
+	t_morpion->map = malloc(sizeof(char *) * 3);
+	while (i < 3)
+	{
+		t_morpion->map[i] = malloc(sizeof(char) * 3);
+		t_morpion->map[i] = strcpy(t_morpion->map[i], "000");
+		t_morpion->map[i][3] = '\0';
+		i++;
+	}
 /*-----------------------------------------------FOND-----------------------------------------------------------------------------------------*/
 /**/	t_morpion->img.texture_fond_morpion = mlx_load_png("img/fond.png");																	/**/
 /**/	t_morpion->img.fond_morpion = mlx_texture_to_image(t_morpion->mlx, t_morpion->img.texture_fond_morpion);							/**/
