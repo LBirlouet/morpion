@@ -6,7 +6,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include <MLX42/MLX42.h>
+#include "MLX42/include/MLX42/MLX42.h"
 
 #define WIDTH 500
 #define HEIGHT 500

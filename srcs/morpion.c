@@ -513,7 +513,7 @@ void	verif_win(t_morpion *t_morpion)
 		return ;
 	}
 	/*verif coll 2 player 2 (O)*/
-	else if (t_morpion->map[0][1] == 'O' && t_morpion->map[1][0] == 'O' && t_morpion->map[2][1] == 'O')
+	else if (t_morpion->map[0][1] == 'O' && t_morpion->map[1][1] == 'O' && t_morpion->map[2][1] == 'O')
 	{
 		mlx_image_to_window(t_morpion->mlx, t_morpion->img.img_win_p_2_5, 0, 0);
 		t_morpion->win = 1;
